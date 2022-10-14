@@ -1,0 +1,785 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('./images/background12.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Trebuchet MS';
+}
+
+.header-container {
+	width: 75%;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 1% 0;
+}
+
+.options {
+	display: flex;
+	list-style-type: none;
+	margin: auto 0 0 0;
+}
+
+.options li:not(:last-child) a {
+	border-right: 1px solid #d3d3d3;
+}
+
+.options li a {
+	padding: 0 1rem;
+	color: #a8a8a8;
+	font-size: 90%;
+}
+
+.options li a:hover {
+	text-decoration: underline;
+}
+
+.options li a img {
+	margin-right: 2px;
+}
+
+.options li a span {
+	color: #3a3b57;
+}
+
+.nav-container-outer {
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 2px 0;
+}
+
+.nav-container-inner {
+	background: #d9d9d9;
+}
+
+nav {
+	width: 75%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+
+.navlinks {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+}
+
+.navlinks li {
+	padding: 0.5rem 0;
+	border-right: 1px solid #fff;
+}
+
+.navlinks li a {
+	color: #000;
+	padding: 0.9rem;
+}
+
+.navlinks li:first-child a {
+	padding-left: 0.5rem;
+}
+
+.search-container form input {
+	width: 200px;
+	border: none;
+	box-shadow: 2px 2px 2px #737373 inset;
+	padding-left: 5px;
+}
+
+.search-container form {
+	width: fit-content;
+	margin: 0 1em 0 auto;
+}
+
+button {
+	border-radius: 5px;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+.offer-tab-container {
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.offer-tab {
+	width: 75%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.offers {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.offers li {
+	padding-right: 1em;
+	list-style-type: none;
+}
+
+.offers li:not(:first-child):before {
+	content: 'o';
+	padding-right: 1em;
+	color: #4b5681;
+}
+
+.offers li:first-child {
+	margin-left: 0.5em;
+	list-style-type: none;
+}
+
+.offers li a {
+	font-size: 0.9em;
+	color: #4b5681;
+}
+
+.offers li a:hover {
+	text-decoration: underline;
+}
+
+.bridal-registry {
+	display: flex;
+	align-items: center;
+	padding-right: 6em;
+}
+
+.bridal-registry a {
+	color: #4b5681;
+	padding-left: 0.5em;
+	font-size: 0.9em;
+}
+
+.bridal-registry a:hover {
+	text-decoration: underline;
+}
+
+main {
+	width: 75%;
+	margin: auto;
+}
+
+.top-container {
+	background: #fff;
+	padding: 0.5em;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.recipe {
+	width: 175%;
+	margin-right: 0.5em;
+}
+
+.card {
+	background: #333;
+	outline: 1px solid #565655;
+	outline-offset: -0.5em;
+	padding: 4em 2em 2em 2em;
+}
+
+.card h2 {
+	font-weight: normal;
+	font-size: 2em;
+	color: #fff;
+	margin: 0 0 0.5em 0.25em;
+}
+
+.card p {
+	color: #8c8b8a;
+	margin: 0 0.5em;
+}
+
+.card a {
+	color: #8c8b8a;
+	text-decoration: underline;
+	font-size: 0.9em;
+	margin-left: 0.5em;
+}
+
+.menu-options {
+	margin: 1.5em 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.menu-options li {
+	padding: 0.4em 0.5em;
+}
+
+.menu-options li:not(:last-child) {
+	border-bottom: 1px solid #8c8b8a;
+}
+
+.menu-options li a {
+	text-decoration: none;
+	color: #d4d3d2;
+	font-size: 1.1em;
+	margin-left: 0;
+}
+
+.bottom-container {
+	background: #2e2f2c;
+	padding: 0.5em;
+}
+
+.bottom {
+	background: #fff;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.tile {
+	position: relative;
+	height: 170px;
+}
+
+.tile img {
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+
+.glass img {
+	left: 0;
+}
+
+.album img {
+	right: 0;
+}
+
+.content {
+	width: 100%;
+	height: 85%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 2px solid #eaeaea;
+}
+
+.content h3 {
+	font-weight: normal;
+	color: #6b6b6a;
+	margin: 0;
+	font-size: 110%;
+}
+
+.content p {
+	margin: 0;
+	margin-top: 1%;
+	font-size: 80%;
+	color: #a1a0a1;
+}
+
+.content a {
+	color: #7c87a3;
+	font-size: 90%;
+}
+
+.glass .content {
+	width: 90%;
+	top: 8%;
+	left: 6%;
+}
+
+.glass .content a {
+	float: right;
+	margin-top: 6%;
+	margin-right: 16%;
+}
+
+.plates .content {
+	width: 90%;
+	height: 85%;
+	top: 8%;
+	left: 4%;
+}
+
+.plates .content a {
+	float: right;
+	margin-right: 15%;
+	margin-top: 5%;
+}
+
+.album .content {
+	border: none;
+	left: 2%;
+	top: 8%;
+	width: 90%;
+}
+
+.album .content h3 {
+	width: 45%;
+}
+
+.album .content p {
+	float: left;
+	margin-top: 2%;
+	width: 55%;
+}
+
+.album .content a {
+	float: left;
+	margin-top: 5%;
+	margin-right: 10%;
+}
+
+footer {
+	width: 75%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5% 0;
+}
+
+footer a {
+	font-size: 0.75em;
+	color: #8e8d8f;
+	text-decoration: underline;
+}
+
+.footer-links {
+	margin: 0 0 2% 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+}
+
+.footer-links li {
+	padding: 0 2%;
+	border-left: 1px solid #8e8d8f;
+}
+
+.footer-links li:first-child {
+	padding-left: 0;
+	border-left: none;
+}
+
+footer p {
+	color: #8e8d8f;
+	font-size: 0.8em;
+	margin: 0 0 2% 0;
+}
+
+.mail-id {
+	font-size: 1em;
+}
+
+.signup form input {
+	font-size: 0.8em;
+	width: 60%;
+	border: none;
+	padding: 3px 0;
+	padding-left: 5px;
+	box-shadow: 2px 2px 2px #737373 inset;
+}
+
+.signup form button {
+	padding: 2px 5px;
+}
+
+@media only screen and (max-width: 1435px) {
+	.navlinks li a {
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	.options li a {
+		padding: 0 0.75em;
+	}
+
+	.navlinks li a {
+		padding: 0.25rem;
+		font-size: 0.85rem;
+	}
+
+	.search-container form input {
+		font-size: 0.75rem;
+	}
+
+	.search-container form button {
+		font-size: 0.75rem;
+	}
+
+	.offers li {
+		font-size: 0.9em;
+	}
+
+	.bridal-registry a {
+		font-size: 0.9em;
+	}
+
+	.recipe {
+		width: 65%;
+	}
+
+	.card h2 {
+		font-size: 1.5em;
+	}
+
+	.card > a {
+		font-size: 0.9em;
+	}
+
+	.glass .content a {
+		margin-top: 0;
+		margin-right: 2%;
+	}
+
+	.plates .content {
+		width: 90%;
+	}
+
+	.plates .content a {
+		margin-top: 2%;
+		margin-right: 2%;
+	}
+
+	.album .content {
+		border: none;
+		left: 2%;
+		top: 8%;
+		width: 90%;
+	}
+
+	.album .content h3 {
+		width: 60%;
+	}
+
+	.album .content a {
+		margin-top: 4%;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.header-container {
+		width: 95%;
+		margin: auto;
+	}
+
+	nav {
+		width: 95%;
+	}
+
+	.offer-tab {
+		width: 95%;
+	}
+
+	main {
+		width: 95%;
+	}
+
+	footer {
+		width: 95%;
+	}
+
+	.options li a {
+		padding: 0 0.6em;
+	}
+
+	.navlinks li a {
+		padding: 0.5rem;
+		font-size: 0.85rem;
+	}
+
+	.search-container form input {
+		font-size: 0.9rem;
+	}
+
+	.search-container form button {
+		font-size: 0.9rem;
+	}
+
+	.offers li {
+		font-size: 0.8em;
+	}
+
+	.bridal-registry a {
+		font-size: 0.9em;
+	}
+
+	.recipe {
+		width: 140%;
+	}
+
+	.card h2 {
+		font-size: 1.75em;
+	}
+
+	.card p {
+		font-size: 0.9em;
+		margin: 0 0.3em;
+	}
+
+	.menu-options {
+		margin: 1em 0;
+	}
+
+	.menu-options li a {
+		font-size: 1.05em;
+	}
+
+	.card > a {
+		font-size: 0.9em;
+	}
+
+	.glass .content a {
+		margin-top: 0;
+		margin-right: 4%;
+	}
+
+	.album .content {
+		width: 9 0%;
+	}
+
+	.album .content a {
+		margin-top: 6%;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.recipe {
+		width: 70%;
+	}
+
+	.card h2 {
+		font-size: 1.3em;
+	}
+
+	.menu-options li a {
+		font-size: 0.9em;
+	}
+
+	.card > a {
+		font-size: 0.75em;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	header {
+		display: block;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+	}
+
+	.options {
+		justify-content: space-around;
+		padding: 0;
+	}
+
+	.options li:not(:last-child) a {
+		padding: 0;
+		border-right: none;
+	}
+
+	nav {
+		display: block;
+	}
+
+	.navlinks {
+		justify-content: space-around;
+		border-bottom: 1px solid #fff;
+	}
+
+	.navlinks li {
+		border: none;
+	}
+
+	.navlinks li a {
+		text-decoration: underline;
+	}
+
+	.search-container {
+		text-align: center;
+		padding: 1% 0;
+	}
+
+	.search-container form {
+		margin: 0;
+	}
+
+	.search-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.offers li a {
+		font-size: 0.9em;
+	}
+
+	.bridal-registry a {
+		font-size: 0.75em;
+	}
+
+	.top {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.recipe {
+		width: 100%;
+	}
+
+	.bottom {
+		grid-template-columns: auto;
+	}
+
+	.tile {
+		position: static;
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
+	.tile img {
+		position: static;
+		margin: 0;
+	}
+
+	.content {
+		position: static;
+		border-right: none;
+		margin: 5% 0 0 auto;
+		width: 50%;
+	}
+
+	.album .content {
+		width: 70%;
+	}
+
+	.album .content h3 {
+		width: 100%;
+	}
+
+	.album .content p {
+		width: 100%;
+	}
+
+	.tile .content a {
+		float: right;
+		margin-top: 5%;
+		margin-right: 15%;
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 645px) {
+	.options li a {
+		font-size: 0.8em;
+	}
+
+	.options li {
+		text-align: center;
+	}
+
+	.navlinks li {
+		text-align: center;
+	}
+
+	.navlinks li a {
+		font-size: 0.8em;
+		padding: 0.5rem 0.2rem;
+	}
+
+	.tile img {
+		width: 50%;
+	}
+
+	.tile img {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.options li a {
+		font-size: 0.7em;
+	}
+
+	.navlinks li a {
+		font-size: 0.7em;
+	}
+
+	.bottom {
+		height: 950px;
+		padding: 5% 0;
+	}
+
+	.tile {
+		display: block;
+	}
+
+	.tile img {
+		width: 250px;
+		height: 100%;
+	}
+
+	.album .content {
+		width: 100%;
+	}
+
+	.tile .content {
+		width: 100%;
+		text-align: center;
+	}
+
+	footer {
+		display: inline-block;
+		padding: 0 2%;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	footer p {
+		font-size: 0.6em;
+	}
+
+	.footer-links {
+		justify-content: center;
+	}
+
+	.footer-links li a {
+		font-size: 0.6em;
+	}
+
+	.signup form input {
+		font-size: 0.6em;
+	}
+
+	.signup form button {
+		font-size: 0.6em;
+	}
+
+	.offer-tab {
+		display: inline-block;
+	}
+
+	.offers {
+		border-bottom: 1px solid #d9d9d9;
+		padding: 1% 0;
+	}
+
+	.bridal-registry {
+		padding: 0;
+		justify-content: center;
+	}
+}
